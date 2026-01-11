@@ -11,6 +11,14 @@ public class PurchaseResult {
         this.sold = sold;
     }
 
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public EnumMap<ProductCategory, Integer> getSoldProducts() {
+        return sold;
+    }
+
     @Override
     public String toString() {
         return success
